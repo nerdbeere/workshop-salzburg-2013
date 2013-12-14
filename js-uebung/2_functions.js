@@ -21,3 +21,15 @@ executeFunction(beispiel2); // Was passiert?
 (function foo() {
 	var foobar = 42;
 })();
+
+// Beispiel 5
+sum(1, 2); // returns ?
+function sum(val1, val2) {
+	return val1 + val2;
+}
+
+// Beispiel 6
+sum(1, 2); // returns ?
+var sum = function(val1, val2) {
+	return val1 + val2;
+};
