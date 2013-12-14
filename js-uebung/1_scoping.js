@@ -29,7 +29,7 @@ function test2() {
 test();
 test2();
 
-foo + bar; // ?
+foo + bar; // Warum?
 
 // Beispiel 4
 var num = 2;
