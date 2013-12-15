@@ -33,3 +33,34 @@ sum(1, 2); // returns ?
 var sum = function(val1, val2) {
 	return val1 + val2;
 };
+
+// Beispiel 7
+function Guy() {
+	this.isNinja = false;
+	this.weapons = [];
+}
+
+function Ninja() {
+	this.isNinja = true;
+	this.weapons = [];
+}
+
+Ninja.prototype = Guy.prototype;
+
+Guy.prototype.train = function() {
+	this.isNinja = true;
+};
+
+Guy.prototype.addWeapon = function(weapon) {
+	this.weapons.push(weapon);
+	return this.weapons;
+};
+
+var julian = new Guy();
+julian.train();
+
+var bela = new Ninja();
+
+bela.addWeapon('javascript');
+julian.addWeapon('scala');
+
