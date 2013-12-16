@@ -64,3 +64,9 @@ var bela = new Ninja();
 bela.addWeapon('javascript');
 julian.addWeapon('scala');
 
+// Beispiel 8
+;(function($, undefined) {
+	"use strict";
+	// your code here
+})(jQuery);
+

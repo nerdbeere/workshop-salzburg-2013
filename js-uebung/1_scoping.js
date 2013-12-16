@@ -46,8 +46,3 @@ function Beispiel5() {
 }
 new Beispiel5();
 console.log(num);
-
-// Aufgabe 1
-// Implementiere die folgende Funktion
-sum(21)(2); // should return 23
-sum(11)(31); // should return 42

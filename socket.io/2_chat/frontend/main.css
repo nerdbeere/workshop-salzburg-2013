@@ -1,0 +1,57 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	overflow: hidden;
+}
+
+.container {
+	height: 100%;
+	overflow: hidden;
+}
+
+.container .message-container {
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+
+.container .message-container .messages {
+	width: 100%;
+	height: 92%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.container .message-container .messages .username {
+	font-weight: bold;
+	padding-right: 6px;
+}
+
+.container .message-container .messages ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.container .message-container .messages ul > li{
+	border-bottom: 1px #EEEEEE solid;
+	padding: 4px;
+}
+
+.container .message-container .input {
+	width: 100%;
+	height: 8%;
+	margin-top: 10px;
+	background-color: #CCCCCC;
+}
+
+.container .message-container .input input {
+	font-size: 18px;
+	padding: 6px;
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+}
