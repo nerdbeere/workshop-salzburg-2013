@@ -1,0 +1,13 @@
+<tr ng-repeat="movie in movies">
+    <td><a href="">{{movie.name}}</a></td>
+    <td>{{movie.year}}</td>
+    <td>
+        <rating></rating>
+    </td>
+    <td>
+        {{movie.watched | watched}}
+    </td>
+    <td>
+        <span class="label" ng-repeat="tag in movie.tags">{{tag.name}}</span>
+    </td>
+</tr>

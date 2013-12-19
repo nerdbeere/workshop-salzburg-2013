@@ -46,3 +46,16 @@ function Beispiel5() {
 }
 new Beispiel5();
 console.log(num);
+
+// Beispiel 6
+function beispiel6(value2) {
+	console.log(this.value1 + value2);
+}
+
+var scope = {
+	value1: 42
+};
+
+beispiel6.bind(scope)(23);
+beispiel6.apply(scope, [23]);
+beispiel6.call(scope, 23);
